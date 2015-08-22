@@ -1,0 +1,18 @@
+.input-width {
+  width: 250px;
+}
+.reg-table {
+  margin: 0 auto;
+  width: 350px;
+
+}
+/*.reg-table  tr  td {
+  padding: 10px;
+}*/
+.a-right {
+  float: right;
+}
+.reg-h3 {
+  width: 100px;
+  margin: 10px auto 30px;
+}

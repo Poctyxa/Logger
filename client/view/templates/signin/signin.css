@@ -1,0 +1,28 @@
+.btn-container {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 280px;
+}
+.btn-margin {
+  margin: 15px auto 40px;
+}
+.h3-signin {
+  width: 120px;
+  margin: 0 auto;
+}
+.s-in-table {
+  margin: 0 auto;
+
+}
+.s-in-table  tr  td {
+  padding: 10px;
+}
+.password-authorize {
+  display: none;
+}
+.pin-authorize {
+  display: none;
+}
+.select-params {
+  width: 250px;
+}

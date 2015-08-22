@@ -1,0 +1,88 @@
+<template name="Signin">
+  <div class="signin-container">
+    <div class="btn-container">
+      <h3 class="h3-signin">Sign in ...</h3>
+      <p>
+      <button id="password-authorize" class="btn btn-primary btn-margin btn-form">.. with password</button>
+      <button id="pin-authorize" class="btn btn-primary btn-margin btn-form">.. with PIN-code</button>
+      </p>
+    </div>
+    {{> Signin_pass}}
+    {{> Signin_pin}}
+  </div>
+</template>
+
+
+
+<template name="Signin_pass">
+  <div class="password-authorize c-hide">
+    <table class="s-in-table ">
+      <form class="form-authorize-pass">
+      <tr>
+        <td>
+        <p>Username:</p>
+        </td>
+        <td>
+           <input type="text" name="login" class="input-sm input-width" placeholder='Enter your username...'>
+         </td>
+      </tr>
+      <tr>
+        <td>
+        <p>Password:</p>
+        </td>
+        <td>
+           <input type="password" name="password" class="input-sm input-width" placeholder='Enter your password...'>
+         </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+        <p><input type="submit" value="Sign in" class='btn btn-success a-right signin-pass'></p>
+        </td>
+      </tr>
+      </form>
+    </table>
+  </div>
+</template>
+
+<template name="Signin_pin">
+      {{check_username}}
+  <div class="pin-authorize c-hide">
+    <table class="s-in-table">
+      <form class="form-authorize-pin">
+      <tr>
+        <td>
+          User:
+        </td>
+        <td>
+          <select class="selectpicker select-params">
+            {{#each users}}
+              {{> userDropdown}}
+            {{/each}}
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <p>PIN-code:</p>
+        </td>
+        <td>
+           <input type="password" name="pin" class="input-sm input-width" placeholder='Enter your PIN-code...'>
+         </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+        <p><input type="submit" value="Sign in" class='btn btn-success a-right signin-pin'></p>
+        </td>
+      </tr>
+      </form>
+    </table>
+  </div>
+</template>
+
+<template name="userDropdown">
+  <option>{{username}}</option>
+</template>

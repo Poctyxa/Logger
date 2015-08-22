@@ -1,0 +1,20 @@
+<template name="ChangeUser">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  Select user
+    <b class="caret"></b>
+  </a>
+  <ul class="notification dropdown-menu">
+      {{#each ChUs}}
+        {{> ChangeUserItem}}
+      {{/each}}
+  </ul>
+</template>
+
+
+<template name="ChangeUserItem">
+  <li>
+    <a href="{{pathFor 'home'}}" class="username_href">
+      <strong class="username_value">{{username}}</strong>
+    </a>
+  </li>
+</template>
